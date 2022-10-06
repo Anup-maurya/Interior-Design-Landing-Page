@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../images/bg-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #ffffff;
+}
+
+button {
+  cursor: pointer;
+}
+
+nav {
+  padding: 3% 6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 40px;
+}
+
+.list-item {
+  list-style: none;
+  margin-right: 60px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.list-item:last-child {
+  margin-right: 0;
+}
+
+.phone-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-image img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.menu-icon {
+  display: none;
+  height: 30px;
+  cursor: pointer;
+}
+
+section {
+  padding: 60px 100px;
+}
+
+.hero {
+  font-size: 35px;
+  font-weight: 900;
+  width: 40%;
+}
+
+.btn {
+  color: #ffffff;
+  background: transparent;
+  padding: 15px 40px;
+  border-radius: 30px;
+  border: 3px solid #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 60px;
+}
+.btn:hover {
+  color: #000;
+  background-color: #fff;
+}
+.idea-card {
+  position: absolute;
+  bottom: 15%;
+  right: 30%;
+  width: 260px;
+}
+
+.plugin-card {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  width: 260px;
+}
+
+.card {
+  background-color: rgb(48, 70, 87, 0.7);
+  padding: 20px;
+}
+
+.card div {
+  background-color: #ffffff;
+  width: 80px;
+  border-radius: 30px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  padding: 5px 18px;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.circle-1,
+.circle-2 {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.circle-1 {
+  position: absolute;
+  top: 53%;
+  right: 15%;
+}
+
+.circle-2 {
+  position: absolute;
+  top: 70%;
+  right: 24%;
+}
+
+.line-1 {
+  position: absolute;
+  width: 1px;
+  top: 45%;
+  right: 15.7%;
+  height: 9%;
+  background-color: #ffffff;
+}
+
+.line-2 {
+  position: absolute;
+  width: 5%;
+  top: 71%;
+  right: 25%;
+  height: 1px;
+  background-color: #ffffff;
+}
+@media only screen and (max-width: 1200px) {
+  nav {
+    padding: 4%;
+  }
+  nav .list-items {
+    padding-bottom: 30px;
+  }
+  nav .list-item {
+    margin-right: 40px;
+  }
+  section {
+    padding: 4% 6%;
+  }
+  section .hero {
+    font-size: 32px;
+  }
+  .line-1 {
+    top: 45%;
+    right: 16%;
+  }
+  .circle-1 {
+    top: 53%;
+    right: 15%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .logo {
+    height: 32px;
+  }
+  .list-item {
+    margin-right: 20px;
+  }
+  .list-items {
+    display: none;
+  }
+  .menu-icon {
+    display: inline-block;
+  }
+
+  .hero{
+    width: 100%;
+  }
+  .hero h1{
+    padding-top: 80px;
+    font-weight: 500;
+    font-size: 50px;
+    
+  }
+  .btn {
+    padding: 12px 30px;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .idea-card {
+    display: none;
+  }
+  .plugin-card {
+    display: none;
+  }
+  .card {
+    padding: 15px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+  .circle-1 {
+    top: 50%;
+    right: 10%;
+  }
+  .circle-2 {
+    top: 69.5%;
+    right: 10%;
+  }
+  .line-1 {
+    top: 43%;
+    right: 11.5%;
+    height: 8%;
+  }
+  .line-2 {
+    width: 8%;
+    right: 12%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .hero {
+    font-size: 20px;
+    width: 100%;
+  }
+  .btn {
+    padding: 10px 24px;
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  .card p {
+    margin-top: 10px;
+  }
+  .idea-card {
+    bottom: 5%;
+    right: 50%;
+    width: 200px;
+  }
+  .plugin-card {
+    top: 40%;
+    right: 3%;
+    width: 180px;
+  }
+  .circle-1 {
+    top: 66%;
+  }
+  .circle-2 {
+    top: 81.5%;
+    right: 32%;
+  }
+  .line-1 {
+    top: 59%;
+    right: 12%;
+    height: 8%;
+  }
+  .line-2 {
+    top: 83%;
+    right: 35.5%;
+    width: 14%;
+  }
+}
